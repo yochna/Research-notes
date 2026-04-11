@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Notes Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #0d0d0d; }
+      input:focus, textarea:focus { outline: none; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #111; }
+      ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+      @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+      .note-card { animation: fadeSlideIn 0.3s ease both; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+      .note-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.5) !important; }
+      .delete-btn:hover { color: #ff5555 !important; background: rgba(255,85,85,0.1) !important; }
+      .pin-btn:hover { color: #ffd700 !important; }
+      .filter-btn:hover { border-color: #444 !important; color: #fff !important; }
+      .submit-btn:hover:not(:disabled) { background: #c8a96e !important; }
+      .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+      input::placeholder, textarea::placeholder { color: #444; }
+      .tag-quick:hover { opacity: 0.8; }
+      .edit-btn:hover { color: #a8d8ea !important; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
